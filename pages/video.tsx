@@ -13,9 +13,9 @@ const VideoPage: NextPage = () => {
 
   return(
     <div>
-      <h1>playsinline</h1>
+      <h1>playsinline="" autoplay=""</h1>
       {/*// @ts-ignore*/}
-      <video id="video" playsinline autoplay muted src="/movies/atrae_opening.mp4" loop />
+      <video id="video" playsinline="" autoplay="" muted src="/movies/atrae_opening.mp4" loop />
     </div>
   )
 }
