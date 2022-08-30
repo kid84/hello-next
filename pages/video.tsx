@@ -10,10 +10,12 @@ const VideoPage: NextPage = () => {
       video.play()
     });
   },[])
+
   return(
     <div>
-      <h1>window.addEventListener</h1>
-      <video id="video" muted src="/movies/atrae_opening.mp4" loop />
+      <h1>playsinline</h1>
+      {/*// @ts-ignore*/}
+      <video id="video" playsinline autoplay muted src="/movies/atrae_opening.mp4" loop />
     </div>
   )
 }
