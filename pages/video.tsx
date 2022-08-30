@@ -3,13 +3,16 @@ import {useEffect} from "react";
 
 const VideoPage: NextPage = () => {
   useEffect(() => {
-    // @ts-ignore
-    const video:HTMLVideoElement | null = document.getElementById("video");
-    if (!video) return;
-    video.play()
+    window.addEventListener("load", () => {
+      // @ts-ignore
+      const video:HTMLVideoElement | null = document.getElementById("video");
+      if (!video) return;
+      video.play()
+    });
   },[])
   return(
     <div>
+      <h1>window.addEventListener</h1>
       <video id="video" muted src="/movies/atrae_opening.mp4" loop />
     </div>
   )
